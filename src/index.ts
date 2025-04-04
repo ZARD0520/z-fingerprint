@@ -9,11 +9,14 @@ type FingerprintOptions = {
   canvas?: boolean;
   webgl?: boolean;
   fonts?: boolean;
+  audio?: boolean;
+  webrtc?: boolean;
+  plugins?: boolean;
   persistent?: boolean;
   storageKey?: string;
 };
 
-class BrowserFingerprint {
+export class BrowserFingerprint {
   private readonly options: FingerprintOptions;
   private storage!: StorageManager;
 
